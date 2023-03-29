@@ -1,0 +1,28 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: qsergean <qsergean@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/01/21 18:18:34 by qsergean          #+#    #+#             */
+/*   Updated: 2023/01/21 20:45:35 by qsergean         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "../incs/Zombie.hpp"
+
+Zombie::Zombie() {
+}
+
+Zombie::~Zombie() {
+    std::cout << "Zombie " << this->_name << " has been destroyed." << std::endl;
+}
+
+void Zombie::announce(void) const{
+	std::cout << this->_name << ": BraiiiiiiinnnzzzZ..." << std::endl;
+}
+
+void Zombie::setName(std::string name){
+	this->_name = name;
+}
